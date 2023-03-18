@@ -1,0 +1,25 @@
+.hero-banner-img {
+    width: 730px;
+    height: 720px;
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    margin-top: -250px;
+    border-radius: 15px 15px 15px 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-banner-img {
+        width: 0px;
+        height: 0px;
+        position: none;
+    }
+}
+
+/* * {
+    background: red;
+} */
+
+/* .Akash {
+    background: red;
+} */
