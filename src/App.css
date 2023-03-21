@@ -1,3 +1,14 @@
+body {
+    font-family: 'Josefin Sans';
+    background-color: #FFFFE8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .hero-banner-img {
     width: 730px;
     height: 720px;
@@ -19,4 +30,55 @@
 .search-btn:hover {
     color: #1976D2 !important;
     border: 1px solid #1976D2 !important;
+}
+
+.bodyPartCard {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+    width: 100px;
+}
+
+.bodyPartCard:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1976D2;
+    font-size: 25px;
+    border-radius: 4px;
+    position: absolute;
+    /* bottom: -20px; */
+    transform: scale(1, 1);
+    transition: 0.3s all ease-out;
+}
+
+
+
+.right-arrow {
+    /* right: 140px; */
+    bottom: -20px;
+
+}
+
+.left-arrow {
+    /* right: 140px; */
+    bottom: 230px;
+
+}
+
+.left-arrow:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.right-arrow:hover {
+    transform: scale(1.2, 1.2);
 }
