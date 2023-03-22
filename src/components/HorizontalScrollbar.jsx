@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import BodyPart from './BodyParts'
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import rightArrowIcon from '../assets/icons/left-arrow.png';

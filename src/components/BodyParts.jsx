@@ -14,17 +14,25 @@ const BodyParts = ({ item, setBodyPart, bodyPart }) => {
             sx={{
                 borderTop: bodyPart === item ? '4px solid #1976D2' : '',
                 borderBottomLeftRadius: '20px',
-                width: '270px',
+                width: '200px',
                 height: '180px',
                 cursor: 'pointer',
                 gap: '47px'
             }}
+            onClick={() => {
+                setBodyPart(item);
+                window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
+            }}
         >
             <img src={Icon} alt='dumbbell'
-                styles={{ width: '40px', height: '40px' }}
+                style={{ width: '60px', height: '68px' }}
                 className='bodyPartCard'
             ></img>
+            <Typography fontSize='20px' fontWeight='bold' color='#3A1212' textTransform='capitalize'
 
+            >
+                {item}
+            </Typography>
         </Stack >
     )
 }
