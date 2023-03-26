@@ -1,9 +1,11 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { Pagination } from '@mui/material/Pagination';
+import { Pagination } from '@mui/material';
 import { Box, Stack, Typography } from '@mui/material/';
 
-import { exerciseDataOptions, fetchData } from '../utils/fetchData'
+import { exerciseDataOptions, fetchData } from '../utils/fetchData';
+import ExerciseCard from './ExerciseCard';
+
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
     console.log(exercises);
@@ -17,12 +19,26 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
             <Typography variant='h3' mb='46px'>
                 Showing Results
             </Typography>
-            <Stack>
+            <Stack direction='row'
+                sx={{ gap: { lg: '110px', xs: '50px' } }}
+                flexWrap='wrap' justifyContent='center'
+            >
                 {
                     exercises.map((exercise, index) => (
-                        <p>{exercise.name}</p>
+                        <ExerciseCard
+                            key={index} exercise={exercise}
+                        />
                     ))
                 }
+            </Stack>
+            <Stack mt='100px' alignItems='center'>
+                {exercises.length > 9 && (
+                    <Pagination
+                        color='standard' shape='rounded'
+                        defaultPage={1}
+                        count={10}
+                    />
+                )}
             </Stack>
         </Box >
     )

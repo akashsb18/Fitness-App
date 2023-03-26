@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFFE8;
+    background-color: #fff;
 }
 
 * {
@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FF2625;
+    color: #1976D2;
     font-size: 25px;
     border-radius: 4px;
     position: absolute;
@@ -77,4 +77,27 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.exercise-card {
+    width: 400px;
+    height: 445px;
+    background: #fff;
+    border-top: 4px solid #1976D2;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+}
+
+.exercise-card img {
+    height: 326px;
+}
+
+.exercise-card:hover {
+    transform: scale(1.1, 1.1);
 }

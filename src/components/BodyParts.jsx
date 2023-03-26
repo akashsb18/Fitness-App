@@ -3,8 +3,6 @@ import { Stack, Typography } from '@mui/material';
 import Icon from '../assets/icons/gym.png';
 
 
-
-
 const BodyParts = ({ item, setBodyPart, bodyPart }) => {
     return (
         <Stack
@@ -29,7 +27,6 @@ const BodyParts = ({ item, setBodyPart, bodyPart }) => {
                 className='bodyPartCard'
             ></img>
             <Typography fontSize='20px' fontWeight='bold' color='#3A1212' textTransform='capitalize'
-
             >
                 {item}
             </Typography>
